@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    background-color: #e9e7e9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: #21507d;
+    text-align: center;
+    height: 60px;
+}
+
+.header p {
+    color: #fff;
+    padding: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.aside ul {
+    list-style: none;
+}
+
+.aside span {
+    opacity: 0.5;
+}
+
+.main {
+    grid-area: main;
+    border: 1px solid #000000;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    gap: 18px;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 20px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+}
+
+.card-button {
+    background-color: #21507d;
+    color: #fff;
+    width: 552px;
+    height: 50px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
